@@ -27,6 +27,6 @@ fn main() {
             }
         }
     }
-
+    
     println!("Result: {}", First::run(input_lines.join("\n")));
 }
