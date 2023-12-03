@@ -2,10 +2,10 @@ mod days;
 
 use std::io;
 use days::challenge_trait::Challenge;
-use days::First;
+use crate::days::Second;
 
 fn main() {
-    println!("{}", First::challenge());
+    println!("{}", Second::challenge());
     println!("Type the challenge input please: ");
 
     let mut input_lines: Vec<String> = Vec::new();
@@ -27,6 +27,6 @@ fn main() {
             }
         }
     }
-    
-    println!("Result: {}", First::run(input_lines.join("\n")));
+
+    println!("Result: {}", Second::run(input_lines.join("\n")));
 }
