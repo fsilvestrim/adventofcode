@@ -1,4 +1,4 @@
-use super::challenge_trait::Challenge;
+use crate::challenge::challenge_trait::Challenge;
 
 pub struct Second;
 
@@ -65,8 +65,8 @@ impl Challenge for Second {
 
 #[cfg(test)]
 mod tests {
+    use crate::challenge::challenge_trait::Challenge;
     use crate::days;
-    use crate::days::challenge_trait::Challenge;
 
     #[test]
     fn test_print_challenge() {
